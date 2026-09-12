@@ -255,8 +255,8 @@ function ActivityChart() {
             <XAxis dataKey="date" axisLine={false} tickLine={false} tick={{ fill: "var(--muted-foreground)", fontSize: 10 }} interval={4} dy={8} />
             <YAxis axisLine={false} tickLine={false} tick={{ fill: "var(--muted-foreground)", fontSize: 10 }} />
             <Tooltip content={<ActivityTooltip />} cursor={{ stroke: "var(--border)", strokeWidth: 1 }} />
-            <Area type="monotone" dataKey="ai" name="resueltas por IA" stroke="var(--success)" strokeWidth={2.5} fill="url(#aiFill)" activeDot={{ r: 4, fill: "var(--success)", stroke: "var(--card)", strokeWidth: 2 }} />
-            <Area type="monotone" dataKey="human" name="derivadas a humano" stroke="var(--ceibo)" strokeWidth={2.5} fill="url(#humanFill)" activeDot={{ r: 4, fill: "var(--ceibo)", stroke: "var(--card)", strokeWidth: 2 }} />
+            <Area isAnimationActive={false} type="monotone" dataKey="ai" name="resueltas por IA" stroke="var(--success)" strokeWidth={2.5} fill="url(#aiFill)" activeDot={{ r: 4, fill: "var(--success)", stroke: "var(--card)", strokeWidth: 2 }} />
+            <Area isAnimationActive={false} type="monotone" dataKey="human" name="derivadas a humano" stroke="var(--ceibo)" strokeWidth={2.5} fill="url(#humanFill)" activeDot={{ r: 4, fill: "var(--ceibo)", stroke: "var(--card)", strokeWidth: 2 }} />
           </AreaChart>
         </ResponsiveContainer>
       </div>
